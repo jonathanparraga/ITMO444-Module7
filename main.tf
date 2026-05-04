@@ -284,12 +284,12 @@ resource "aws_autoscaling_attachment" "asg_attachment" {
   lb_target_group_arn    = aws_lb_target_group.alb_lb_tg.arn
 }
 
-output "alb-lb-tg-arn" {
-  value = aws_lb_target_group.alb-lb-tg.arn
+output "alb_lb_tg-arn" {
+  value = aws_lb_target_group.alb_lb_tg.arn
 }
 
-output "alb-lb-tg-id" {
-  value = aws_lb_target_group.alb-lb-tg.id
+output "alb_lb_tg-id" {
+  value = aws_lb_target_group.alb_lb_tg.id
 }
 
 ##############################################################################
