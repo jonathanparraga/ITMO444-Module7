@@ -121,7 +121,7 @@ output "url" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
 ##############################################################################
 
-resource "aws_lb_target_group" "alb-lb-tg" {
+resource "aws_lb_target_group" "alb_lb_tg" {
   # depends_on is effectively a waiter -- it forces this resource to wait until the listed
   # resource is ready
   depends_on  = [aws_lb.lb]
